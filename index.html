@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multiplayer Game</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <script src="p5.play.js"></script>
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+
+  <script>
+    //Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD4G6opktGl2WmsV9Jo2rZqZDrbgN_77GI",
+      authDomain: "snakegame-8c34c.firebaseapp.com",
+      databaseURL: "https://snakegame-8c34c-default-rtdb.firebaseio.com",
+      projectId: "snakegame-8c34c",
+      storageBucket: "snakegame-8c34c.appspot.com",
+      messagingSenderId: "4580614920",
+      appId: "1:4580614920:web:782b7ab6e8e801c690c2bd"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="Player.js"></script>
+  <script src="Form.js"></script>
+  <script src="Game.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
